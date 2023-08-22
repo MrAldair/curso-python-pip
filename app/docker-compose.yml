@@ -1,5 +1,5 @@
 services:
   app-csv:
-    build:
+    build: 
       context: .
       dockerfile: Dockerfile
