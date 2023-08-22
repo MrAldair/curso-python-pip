@@ -15,13 +15,17 @@ def run():
   percentages = list(map(lambda porcentaje: porcentaje['World Population Percentage'], data))
   
   """
+
+  #Manda llamar las columnas del CSV nueva forma de llamar y consultar con PANDAS
   df = pd.read_csv('./data.csv')
   df = df[df["Continent"] == "Africa"]
 
+  #Crea la grafica
   countries = df['Country/Territory'].values
   percentages = df['World Population Percentage'].values
   charts.generate_pie_chart(countries, percentages)
 
+  #Lee el CSV dependiendo el país que elijas lo consulta del CSV
   data = read_csv.read_csv('./data.csv')
   country = input("Escoge un país: ")
   print(country)
