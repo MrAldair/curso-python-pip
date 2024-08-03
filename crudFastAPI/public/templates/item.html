@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inicio FastAPI</title>
+    <link href="{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Item ID: {{ contact.id }}</h1>
+    <h1>Detalles del Contacto</h1>
+    <p>Nombre: {{ contact.name }}</p>
+    <p>Teléfono: {{ contact.phone }}</p>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
